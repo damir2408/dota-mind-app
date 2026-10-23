@@ -873,7 +873,7 @@ async function renderHero(screen, guard) {
         ${imgTag(heroImg(r.hero), "portrait", r.hero.localized_name)}
         <div class="grow"><b class="ellipsis" style="display:block">${esc(r.hero.localized_name)}</b>
           <div class="wr-bar"><i style="width:${pct(r.wr)}%;background:${color}"></i></div></div>
-        <div style="text-align:right"><b class="num" style="color:${color}">${pct(r.wr)}%</b><br><span class="small muted">${r.games} игр</span></div>
+        <div style="text-align:right"><b class="num" style="color:${color}">${pct(r.wr)}%</b><br><span class="small muted">${r.games} ${plural(r.games, "игра", "игры", "игр")}</span></div>
       </button>`;
     };
     setView(head + `
